@@ -20,3 +20,11 @@ safe to deploy new versions of the application. Upgrades performed via the web
 UI will not persist if you push changes to the application via the resin
 builders.
 
+## Development / Contributing
+
+1. Clone this repo
+2. Make any changes you're interested in
+3. Run `make build` to build the Dockerfile locally
+	* Run `make run` to run OctoPrint locally
+	* Run `make shell` to access a shell in the built container for debugging
+
