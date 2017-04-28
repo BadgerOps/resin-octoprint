@@ -5,8 +5,7 @@
 ## Installation and Usage
 
 1. Create an account at [resin.io](https://dashboard.resin.io)
-2. Create a new RaspberryPi3 application (might work on 1 and 2, but it's not
-   been tested)
+2. Create a new RaspberryPi application (This will work on all versions of the Pi, however the v1 Pi and Pi Zero's will be pretty slow)
 3. Clone this repo
 4. If you don't want to run the latest (master branch) OctoPrint code, select a tag [from the repo](https://github.com/foosel/OctoPrint/tree/master)
    and update Dockerfile.template tag. For example, 1.3.2 would look like:
