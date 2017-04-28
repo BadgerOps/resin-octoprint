@@ -12,5 +12,4 @@ shell: build
 
 prep:
 	@cp Dockerfile.template Dockerfile.local && \
-		sed -i 's|FROM.*$$|FROM resin/nuc-python|' Dockerfile.local
-
+		sed -i "" 's|FROM.*$$|FROM resin/nuc-python|' Dockerfile.local
