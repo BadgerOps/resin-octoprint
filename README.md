@@ -8,11 +8,16 @@
 2. Create a new RaspberryPi3 application (might work on 1 and 2, but it's not
    been tested)
 3. Clone this repo
-4. Copy the git remote command and add resin to this repo as a remote
-5. Push the code up to resin: `git push resin master`
-6. While your image builds, download ResinOS and provision a device
-7. Connect the device to your printer
-8. Watch the dashboard. Once the application has downloaded and started, go to
+4. If you don't want to run the latest (master branch) OctoPrint code, select a tag [from the repo](https://github.com/foosel/OctoPrint/tree/master)
+   and update Dockerfile.template tag. For example, 1.3.2 would look like:
+
+   `ARG tag=1.3.2`
+
+5. Copy the git remote command and add resin to this repo as a remote
+6. Push the code up to resin: `git push resin master`
+7. While your image builds, download ResinOS and provision a device
+8. Connect the device to your printer
+9. Watch the dashboard. Once the application has downloaded and started, go to
    the device's IP address (found in the dashboard) and follow the instructions
 
 Note: Data is persisted in the `/data` partition on the device itself, so it's
@@ -27,4 +32,3 @@ builders.
 3. Run `make build` to build the Dockerfile locally
 	* Run `make run` to run OctoPrint locally
 	* Run `make shell` to access a shell in the built container for debugging
-
